@@ -45,7 +45,7 @@ def clean_taxi_trips(df: pd.DataFrame) -> tuple[pd.DataFrame, dict[str, int]]:
     data = data.loc[valid_distance].copy()
     counts["cleaned_all_days"] = len(data)
 
-    data["day_of_week"] = data["tpep_pickup_datetime"].dt.dayofweek
+    data["day_of_week"] = data["tpep_pickup_datetime"].dt.day_of_week
     weekdays = data["day_of_week"] < 5
     counts["weekend_excluded"] = int((~weekdays).sum())
     data = data.loc[weekdays].copy()
