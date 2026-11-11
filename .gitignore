@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.ipynb_checkpoints/
+# Secret / AWS
+.aws/
+*.pem
+*.key
+credentials
+# Datasets and derived artifacts
+**/data/raw/**
+**/data/processed/**
+**/data/curated/**
+**/outputs/**
+**/results/**
+!**/data/raw/.gitkeep
+!**/data/processed/.gitkeep
+!**/data/curated/.gitkeep
+# WGU / personal documents
+**/submissions/**
+**/*Release*Form*
+**/*Topic*Approval*
+.DS_Store
+Thumbs.db
