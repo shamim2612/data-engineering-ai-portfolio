@@ -15,6 +15,10 @@ Python · Pandas · SQL · Parquet · AWS S3 · Amazon Athena · Data quality ·
 
 > Results and implementation status are documented honestly. A proof-of-concept is not a deployed production system.
 
+## Workstation setup and project continuity
+
+[**Windows setup, commands explained, and current D610 project progress**](docs/WORKSTATION_SETUP_AND_PROGRESS.md). Start here when moving to a new computer. Raw datasets and Python virtual environments are intentionally not stored in Git.
+
 ## Running projects
 
 See each project README for setup and commands. No AWS credentials or raw datasets are committed here.
